@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="redView" destination="a99-hk-29J" id="Ug8-hd-373"/>
                 <outlet property="view" destination="iN0-l3-epB" id="IDE-7y-v22"/>
             </connections>
         </placeholder>
@@ -19,7 +20,21 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a99-hk-29J">
+                    <rect key="frame" x="174.5" y="420.5" width="65" height="65"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.25490196079999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="Ni9-dP-ff6"/>
+                        <constraint firstAttribute="width" constant="65" id="bbZ-IA-6Ly"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a99-hk-29J" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="dvT-hy-265"/>
+                <constraint firstItem="a99-hk-29J" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="sy9-5P-1u4"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
     </objects>

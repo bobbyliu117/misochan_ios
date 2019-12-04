@@ -21,17 +21,19 @@
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
     NSString * deeplinkingString = userActivity.webpageURL.lastPathComponent;
     if ([deeplinkingString isEqualToString:@"ios"]) {
-        NSMutableArray<NSString*> *params = NSMutableArray.array;
+        NSMutableString *params = NSMutableString.string;
         NSURLComponents * components = [NSURLComponents componentsWithURL:userActivity.webpageURL resolvingAgainstBaseURL:NO];
         for (NSURLQueryItem* queryItem in components.queryItems) {
             NSString * token = queryItem.value;
-            [params addObject:token];
+            [params appendFormat:@"%@ ",token];
         }
         UINavigationController *nav = (UINavigationController*)self.window.rootViewController;
-        [nav setViewControllers:@[MainViewController.new] animated:NO];
+        MainViewController *controller = MainViewController.new;
+        controller.tag = params;
+        [nav setViewControllers:@[controller] animated:NO];
         return YES;
     }
-    return YES;
+    return NO;
 }
 
 @end
