@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LaunchViewController.h
 //  MisoChan
 //
 //  Created by Chang Liu on 12/3/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface LaunchViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
