@@ -1,0 +1,8 @@
+
+"ok" = "Okey";
+"title_ins_1" = "Instruction";
+"instruction_1" = "Move the cube around to collect your TREASURE!";
+"score" = "Score: %d";
+"treasure_found" = "You found a treasure";
+"difficulty_increased" = "Difficulty increased";
+"inventory" = "🏠 Inventory";

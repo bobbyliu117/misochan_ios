@@ -12,7 +12,7 @@
     self.navigationController.navigationBar.hidden = YES;
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     
-    [self performSelector:@selector(toVC) withObject:nil afterDelay:3];
+    [self performSelector:@selector(toVC) withObject:nil afterDelay:1];
 }
 
 -(void)toVC{

@@ -12,7 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="labelScore" destination="sgr-Vj-BpL" id="cwg-lF-NnR"/>
+                <outlet property="labelToast" destination="i4B-85-7hw" id="jKy-1f-nFg"/>
                 <outlet property="redView" destination="a99-hk-29J" id="Ug8-hd-373"/>
+                <outlet property="redViewWidth" destination="bbZ-IA-6Ly" id="8Xo-ug-sT1"/>
                 <outlet property="view" destination="iN0-l3-epB" id="IDE-7y-v22"/>
             </connections>
         </placeholder>
@@ -25,14 +28,35 @@
                     <rect key="frame" x="174.5" y="420.5" width="65" height="65"/>
                     <color key="backgroundColor" red="0.8980392157" green="0.25490196079999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="65" id="Ni9-dP-ff6"/>
                         <constraint firstAttribute="width" constant="65" id="bbZ-IA-6Ly"/>
+                        <constraint firstAttribute="width" secondItem="a99-hk-29J" secondAttribute="height" multiplier="1:1" id="l1c-rp-eeP"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:  0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgr-Vj-BpL">
+                    <rect key="frame" x="20" y="64" width="68.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4B-85-7hw">
+                    <rect key="frame" x="30" y="782" width="354" height="40"/>
+                    <color key="backgroundColor" red="0.35686274509999999" green="0.3803921569" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="J1X-Kl-fJ5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="sgr-Vj-BpL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="7zS-jE-SqO"/>
+                <constraint firstItem="i4B-85-7hw" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Rb5-OE-it1"/>
+                <constraint firstItem="sgr-Vj-BpL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="clu-P7-A6v"/>
+                <constraint firstItem="i4B-85-7hw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-40" id="dTW-BU-n9k"/>
                 <constraint firstItem="a99-hk-29J" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="dvT-hy-265"/>
+                <constraint firstItem="i4B-85-7hw" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" constant="-60" id="saS-Ab-Svz"/>
                 <constraint firstItem="a99-hk-29J" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="sy9-5P-1u4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

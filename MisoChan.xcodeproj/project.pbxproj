@@ -16,6 +16,12 @@
 		B0AEB53623971A17003378A7 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB53423971A17003378A7 /* LaunchViewController.m */; };
 		B0AEB53723971A17003378A7 /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0AEB53523971A17003378A7 /* LaunchViewController.xib */; };
 		B0AEB53B23973895003378A7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0AEB53A23973895003378A7 /* MainViewController.xib */; };
+		B0AEB53F23983751003378A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0AEB54123983751003378A7 /* Localizable.strings */; };
+		B0AEB54A2398565A003378A7 /* cameo_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = B0AEB5472398565A003378A7 /* cameo_orange.png */; };
+		B0AEB54B2398565A003378A7 /* bone_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = B0AEB5482398565A003378A7 /* bone_gray.png */; };
+		B0AEB54C2398565A003378A7 /* cameo_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = B0AEB5492398565A003378A7 /* cameo_blue.png */; };
+		B0AEB550239865D4003378A7 /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB54F239865D4003378A7 /* InventoryViewController.m */; };
+		B0AEB5552398672E003378A7 /* Treasure.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB5542398672E003378A7 /* Treasure.m */; };
 		F9CA13C631B8339911EFDB28 /* Pods_MisoChan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D16511AD4874FF85F35FD8 /* Pods_MisoChan.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +44,16 @@
 		B0AEB53523971A17003378A7 /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
 		B0AEB53823971B5F003378A7 /* MisoChan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MisoChan.entitlements; sourceTree = "<group>"; };
 		B0AEB53A23973895003378A7 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		B0AEB54023983751003378A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B0AEB54223983781003378A7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B0AEB54323983782003378A7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B0AEB5472398565A003378A7 /* cameo_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameo_orange.png; sourceTree = "<group>"; };
+		B0AEB5482398565A003378A7 /* bone_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bone_gray.png; sourceTree = "<group>"; };
+		B0AEB5492398565A003378A7 /* cameo_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameo_blue.png; sourceTree = "<group>"; };
+		B0AEB54E239865D4003378A7 /* InventoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InventoryViewController.h; sourceTree = "<group>"; };
+		B0AEB54F239865D4003378A7 /* InventoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InventoryViewController.m; sourceTree = "<group>"; };
+		B0AEB5532398672E003378A7 /* Treasure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Treasure.h; sourceTree = "<group>"; };
+		B0AEB5542398672E003378A7 /* Treasure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Treasure.m; sourceTree = "<group>"; };
 		CF7FD2706B64B5FCBFA422A6 /* Pods-MisoChan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisoChan.release.xcconfig"; path = "Target Support Files/Pods-MisoChan/Pods-MisoChan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +107,8 @@
 		B0AEB50E2396E1E5003378A7 /* MisoChan */ = {
 			isa = PBXGroup;
 			children = (
+				B0AEB5512398670B003378A7 /* data */,
+				B0AEB53C23983706003378A7 /* res */,
 				B0AEB53823971B5F003378A7 /* MisoChan.entitlements */,
 				B0AEB52C23971958003378A7 /* Controller */,
 				B0AEB50F2396E1E5003378A7 /* AppDelegate.h */,
@@ -108,6 +126,7 @@
 		B0AEB52C23971958003378A7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B0AEB54D239865AE003378A7 /* Inventory */,
 				B0AEB5392397386C003378A7 /* Main */,
 				B0AEB52D23971982003378A7 /* Launch */,
 			);
@@ -132,6 +151,59 @@
 				B0AEB53A23973895003378A7 /* MainViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		B0AEB53C23983706003378A7 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				B0AEB54523985597003378A7 /* drawables */,
+				B0AEB54123983751003378A7 /* Localizable.strings */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		B0AEB54523985597003378A7 /* drawables */ = {
+			isa = PBXGroup;
+			children = (
+				B0AEB546239855B6003378A7 /* items */,
+			);
+			path = drawables;
+			sourceTree = "<group>";
+		};
+		B0AEB546239855B6003378A7 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				B0AEB5482398565A003378A7 /* bone_gray.png */,
+				B0AEB5492398565A003378A7 /* cameo_blue.png */,
+				B0AEB5472398565A003378A7 /* cameo_orange.png */,
+			);
+			path = items;
+			sourceTree = "<group>";
+		};
+		B0AEB54D239865AE003378A7 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				B0AEB54E239865D4003378A7 /* InventoryViewController.h */,
+				B0AEB54F239865D4003378A7 /* InventoryViewController.m */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+		B0AEB5512398670B003378A7 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B0AEB55223986712003378A7 /* models */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		B0AEB55223986712003378A7 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B0AEB5532398672E003378A7 /* Treasure.h */,
+				B0AEB5542398672E003378A7 /* Treasure.m */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +254,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = B0AEB5032396E1E5003378A7;
 			productRefGroup = B0AEB50D2396E1E5003378A7 /* Products */;
@@ -198,9 +271,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0AEB53F23983751003378A7 /* Localizable.strings in Resources */,
 				B0AEB53723971A17003378A7 /* LaunchViewController.xib in Resources */,
 				B0AEB51C2396E1E6003378A7 /* LaunchScreen.storyboard in Resources */,
+				B0AEB54A2398565A003378A7 /* cameo_orange.png in Resources */,
 				B0AEB5192396E1E6003378A7 /* Assets.xcassets in Resources */,
+				B0AEB54C2398565A003378A7 /* cameo_blue.png in Resources */,
+				B0AEB54B2398565A003378A7 /* bone_gray.png in Resources */,
 				B0AEB53B23973895003378A7 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,8 +317,10 @@
 				B0AEB5142396E1E5003378A7 /* MainViewController.m in Sources */,
 				B0AEB51F2396E1E6003378A7 /* main.m in Sources */,
 				B0AEB5112396E1E5003378A7 /* AppDelegate.m in Sources */,
+				B0AEB5552398672E003378A7 /* Treasure.m in Sources */,
 				B0AEB53623971A17003378A7 /* LaunchViewController.m in Sources */,
 				B0AEB52B23970BD9003378A7 /* Utils.swift in Sources */,
+				B0AEB550239865D4003378A7 /* InventoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +331,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				B0AEB51B2396E1E6003378A7 /* Base */,
+				B0AEB54223983781003378A7 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B0AEB54123983751003378A7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0AEB54023983751003378A7 /* en */,
+				B0AEB54323983782003378A7 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -263,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -322,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -2,14 +2,12 @@ import UIKit
 
 public class Utils: NSObject {
     @objc public static let showAlert = {
-        (vc: UIViewController) in
-        let alert = UIAlertController(title: "11", message: "22", preferredStyle: .alert)
-        let btn = UIAlertAction(title: "OKey Dodo", style: .default, handler: { _ in
-            print("Chang Liu: Okey dodo clicked")
+        (vc: UIViewController, title: String, message: String, onOK: @escaping (()->Void)) in
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let btn = UIAlertAction(title: NSLocalizedString("ok", comment: "Ok"), style: .default, handler: { _ in
+            onOK()
         })
         alert.addAction(btn)
-        vc.present(alert, animated: true, completion: {
-            print("Chang Liu: Dodo showed up")
-        })
+        vc.present(alert, animated: true, completion:nil)
     }
 }
