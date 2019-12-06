@@ -107,6 +107,7 @@
 		B0AEB50E2396E1E5003378A7 /* MisoChan */ = {
 			isa = PBXGroup;
 			children = (
+				B0AEB5572399A1E5003378A7 /* utils */,
 				B0AEB5512398670B003378A7 /* data */,
 				B0AEB53C23983706003378A7 /* res */,
 				B0AEB53823971B5F003378A7 /* MisoChan.entitlements */,
@@ -204,6 +205,13 @@
 				B0AEB5542398672E003378A7 /* Treasure.m */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		B0AEB5572399A1E5003378A7 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

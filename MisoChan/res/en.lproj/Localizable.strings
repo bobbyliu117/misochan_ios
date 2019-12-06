@@ -6,3 +6,4 @@
 "treasure_found" = "You found a treasure";
 "difficulty_increased" = "Difficulty increased";
 "inventory" = "🏠 Inventory";
+"login_failed" = "You do not need to login. Please enjoy playing 😄";

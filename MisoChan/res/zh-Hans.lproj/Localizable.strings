@@ -6,3 +6,4 @@
 "treasure_found" = "你发现了一个宝藏";
 "difficulty_increased" = "难度增加了";
 "inventory" = "🏠 仓库";
+"login_failed" = "您无需登录，随便玩儿吧😄";
