@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B06AE442239F0F5F00807A41 /* WebGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06AE440239F0F5F00807A41 /* WebGameViewController.m */; };
+		B06AE443239F0F5F00807A41 /* WebGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06AE441239F0F5F00807A41 /* WebGameViewController.xib */; };
+		B06AE446239F156A00807A41 /* WebGames in Resources */ = {isa = PBXBuildFile; fileRef = B06AE445239F156A00807A41 /* WebGames */; };
 		B0AEB5112396E1E5003378A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB5102396E1E5003378A7 /* AppDelegate.m */; };
 		B0AEB5142396E1E5003378A7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AEB5132396E1E5003378A7 /* MainViewController.m */; };
 		B0AEB5192396E1E6003378A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AEB5182396E1E6003378A7 /* Assets.xcassets */; };
@@ -28,6 +31,10 @@
 /* Begin PBXFileReference section */
 		42D16511AD4874FF85F35FD8 /* Pods_MisoChan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MisoChan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB0E49585FBFB318642E1C6 /* Pods-MisoChan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisoChan.debug.xcconfig"; path = "Target Support Files/Pods-MisoChan/Pods-MisoChan.debug.xcconfig"; sourceTree = "<group>"; };
+		B06AE43F239F0F5F00807A41 /* WebGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebGameViewController.h; sourceTree = "<group>"; };
+		B06AE440239F0F5F00807A41 /* WebGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebGameViewController.m; sourceTree = "<group>"; };
+		B06AE441239F0F5F00807A41 /* WebGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebGameViewController.xib; sourceTree = "<group>"; };
+		B06AE445239F156A00807A41 /* WebGames */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WebGames; sourceTree = "<group>"; };
 		B0AEB50C2396E1E5003378A7 /* MisoChan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisoChan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AEB50F2396E1E5003378A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B0AEB5102396E1E5003378A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,6 +93,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B06AE43E239F0EBF00807A41 /* WebGame */ = {
+			isa = PBXGroup;
+			children = (
+				B06AE43F239F0F5F00807A41 /* WebGameViewController.h */,
+				B06AE440239F0F5F00807A41 /* WebGameViewController.m */,
+				B06AE441239F0F5F00807A41 /* WebGameViewController.xib */,
+			);
+			path = WebGame;
+			sourceTree = "<group>";
+		};
 		B0AEB5032396E1E5003378A7 = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +124,7 @@
 		B0AEB50E2396E1E5003378A7 /* MisoChan */ = {
 			isa = PBXGroup;
 			children = (
-				B0AEB5572399A1E5003378A7 /* utils */,
+				B06AE445239F156A00807A41 /* WebGames */,
 				B0AEB5512398670B003378A7 /* data */,
 				B0AEB53C23983706003378A7 /* res */,
 				B0AEB53823971B5F003378A7 /* MisoChan.entitlements */,
@@ -127,6 +144,7 @@
 		B0AEB52C23971958003378A7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B06AE43E239F0EBF00807A41 /* WebGame */,
 				B0AEB54D239865AE003378A7 /* Inventory */,
 				B0AEB5392397386C003378A7 /* Main */,
 				B0AEB52D23971982003378A7 /* Launch */,
@@ -207,13 +225,6 @@
 			path = models;
 			sourceTree = "<group>";
 		};
-		B0AEB5572399A1E5003378A7 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,12 +290,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06AE443239F0F5F00807A41 /* WebGameViewController.xib in Resources */,
 				B0AEB53F23983751003378A7 /* Localizable.strings in Resources */,
 				B0AEB53723971A17003378A7 /* LaunchViewController.xib in Resources */,
 				B0AEB51C2396E1E6003378A7 /* LaunchScreen.storyboard in Resources */,
 				B0AEB54A2398565A003378A7 /* cameo_orange.png in Resources */,
 				B0AEB5192396E1E6003378A7 /* Assets.xcassets in Resources */,
 				B0AEB54C2398565A003378A7 /* cameo_blue.png in Resources */,
+				B06AE446239F156A00807A41 /* WebGames in Resources */,
 				B0AEB54B2398565A003378A7 /* bone_gray.png in Resources */,
 				B0AEB53B23973895003378A7 /* MainViewController.xib in Resources */,
 			);
@@ -323,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0AEB5142396E1E5003378A7 /* MainViewController.m in Sources */,
+				B06AE442239F0F5F00807A41 /* WebGameViewController.m in Sources */,
 				B0AEB51F2396E1E6003378A7 /* main.m in Sources */,
 				B0AEB5112396E1E5003378A7 /* AppDelegate.m in Sources */,
 				B0AEB5552398672E003378A7 /* Treasure.m in Sources */,

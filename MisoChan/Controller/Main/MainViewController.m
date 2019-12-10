@@ -1,5 +1,6 @@
 #import "MainViewController.h"
 #import "InventoryViewController.h"
+#import "WebGameViewController.h"
 #import "Treasure.h"
 #import <MisoChan-Swift.h>
 @import AuthenticationServices;
@@ -39,7 +40,7 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"title_ins_1", nil) style:UIBarButtonItemStyleDone target:self action:@selector(instructUser)];
     UIImage *rightImage = [[UIImage imageNamed:@"backpack"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UIBarButtonItem *loginItem = [[UIBarButtonItem alloc]initWithTitle:@"👥" style:UIBarButtonItemStylePlain target:self action:@selector(login)];
+    UIBarButtonItem *loginItem = [[UIBarButtonItem alloc]initWithTitle:@"👥" style:UIBarButtonItemStylePlain target:self action:@selector(rotateScreen)];
     UIBarButtonItem *inventoryItem = [[UIBarButtonItem alloc]initWithImage:rightImage style:UIBarButtonItemStylePlain target:self action:@selector(toInventory)];
     self.navigationItem.rightBarButtonItems = @[inventoryItem,loginItem];
     
@@ -49,6 +50,13 @@
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(gesture:)];
     [self.redView addGestureRecognizer:pan];
 }
+
+-(void)rotateScreen{
+    WebGameViewController *vc = WebGameViewController.new;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 
 -(void)login {
     NSURL *authURL = [NSURL URLWithString:@"https://misochan.herokuapp.com/ioscookie"];
