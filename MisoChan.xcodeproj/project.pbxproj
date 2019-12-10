@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0391FD2239F1C9500529BAC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0391FD1239F1C9500529BAC /* WebKit.framework */; };
+		B0391FD623A0021F00529BAC /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0391FD523A0021F00529BAC /* NavViewController.m */; };
 		B06AE442239F0F5F00807A41 /* WebGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06AE440239F0F5F00807A41 /* WebGameViewController.m */; };
 		B06AE443239F0F5F00807A41 /* WebGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06AE441239F0F5F00807A41 /* WebGameViewController.xib */; };
 		B06AE446239F156A00807A41 /* WebGames in Resources */ = {isa = PBXBuildFile; fileRef = B06AE445239F156A00807A41 /* WebGames */; };
@@ -31,6 +33,9 @@
 /* Begin PBXFileReference section */
 		42D16511AD4874FF85F35FD8 /* Pods_MisoChan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MisoChan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB0E49585FBFB318642E1C6 /* Pods-MisoChan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisoChan.debug.xcconfig"; path = "Target Support Files/Pods-MisoChan/Pods-MisoChan.debug.xcconfig"; sourceTree = "<group>"; };
+		B0391FD1239F1C9500529BAC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B0391FD423A0021F00529BAC /* NavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		B0391FD523A0021F00529BAC /* NavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 		B06AE43F239F0F5F00807A41 /* WebGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebGameViewController.h; sourceTree = "<group>"; };
 		B06AE440239F0F5F00807A41 /* WebGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebGameViewController.m; sourceTree = "<group>"; };
 		B06AE441239F0F5F00807A41 /* WebGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebGameViewController.xib; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0391FD2239F1C9500529BAC /* WebKit.framework in Frameworks */,
 				F9CA13C631B8339911EFDB28 /* Pods_MisoChan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,9 +94,19 @@
 		AE680778F2CED4673B062C87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0391FD1239F1C9500529BAC /* WebKit.framework */,
 				42D16511AD4874FF85F35FD8 /* Pods_MisoChan.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0391FD323A001CC00529BAC /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				B0391FD423A0021F00529BAC /* NavViewController.h */,
+				B0391FD523A0021F00529BAC /* NavViewController.m */,
+			);
+			path = Nav;
 			sourceTree = "<group>";
 		};
 		B06AE43E239F0EBF00807A41 /* WebGame */ = {
@@ -144,6 +160,7 @@
 		B0AEB52C23971958003378A7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B0391FD323A001CC00529BAC /* Nav */,
 				B06AE43E239F0EBF00807A41 /* WebGame */,
 				B0AEB54D239865AE003378A7 /* Inventory */,
 				B0AEB5392397386C003378A7 /* Main */,
@@ -336,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0AEB5142396E1E5003378A7 /* MainViewController.m in Sources */,
+				B0391FD623A0021F00529BAC /* NavViewController.m in Sources */,
 				B06AE442239F0F5F00807A41 /* WebGameViewController.m in Sources */,
 				B0AEB51F2396E1E6003378A7 /* main.m in Sources */,
 				B0AEB5112396E1E5003378A7 /* AppDelegate.m in Sources */,
