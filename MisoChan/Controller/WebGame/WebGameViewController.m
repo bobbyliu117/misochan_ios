@@ -28,15 +28,6 @@
 //    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.youtube.com"]]];
 }
 
-- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
-    NSLog(@"willTransitionToTraitCollection");
-}
-
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
-    [self.webView setNeedsUpdateConstraints];
-    NSLog(@"viewWillTransitionToSize");
-}
-
 // 00 锁定rotate
 - (BOOL)shouldAutorotate {
     if (!rotated) {

@@ -33,6 +33,14 @@
     [self initUI];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if ([self isLandscape]) {
+        [[UIDevice currentDevice] setValue:@(UIInterfaceOrientationPortrait) forKey:@"orientation"];
+        [UINavigationController attemptRotationToDeviceOrientation];
+    }
+}
+
 -(void)initUI {
     self.navigationController.navigationBar.hidden = NO;
     self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
@@ -56,7 +64,9 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-
+-(BOOL)isLandscape {return UIInterfaceOrientationIsLandscape(UIApplication.sharedApplication.statusBarOrientation);}
+- (BOOL)shouldAutorotate{return [self isLandscape];}
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{return UIInterfaceOrientationMaskPortrait;}
 
 -(void)login {
     NSURL *authURL = [NSURL URLWithString:@"https://misochan.herokuapp.com/ioscookie"];
